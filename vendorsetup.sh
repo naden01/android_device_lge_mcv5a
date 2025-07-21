@@ -1,3 +1,1 @@
-add_lunch_combo omni_mcv5a-user
-add_lunch_combo omni_mcv5a-userdebug
-add_lunch_combo omni_mcv5a-eng
+add_lunch_combo omni_k50sv1_64-eng
