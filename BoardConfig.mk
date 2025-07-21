@@ -1,4 +1,4 @@
-DEVICE_PATH := device/lge/mcv5a
+DEVICE_PATH := device/YIYO/k50sv1_64
 
 # CPU
 TARGET_ARCH := arm64
