@@ -1,34 +1,10 @@
-LOCAL_PATH := device/lge/mcv5a
+#
+# Copyright (C) 2024 The Android Open Source Project
+# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# A/B
-AB_OTA_PARTITIONS += \
-    boot \
-    system \
-    vendor \
-    odmdtbo \
-    oem
-
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
-
-# A/B Scripts
-PRODUCT_PACKAGES += \
-    otapreopt_script
-
-# A/B Update Engine
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload \
-    update_engine_client
-
-# Boot Control
-PRODUCT_PACKAGES += \
-    bootctl \
-    android.hardware.boot@1.1-mtkimpl.recovery
-
-# Debug
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+LOCAL_PATH := device/YIYO/k50sv_64
