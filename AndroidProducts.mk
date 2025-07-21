@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_mcv5a.mk
+    $(LOCAL_DIR)/omni_k50sv1_64.mk
